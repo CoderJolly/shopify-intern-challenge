@@ -63,3 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rack-cors', require: 'rack/cors'
 gem 'rack-attack'
 gem 'apipie-rails'
+gem 'devise_token_auth'
