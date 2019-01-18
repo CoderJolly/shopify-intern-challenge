@@ -64,3 +64,5 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'rack-attack'
 gem 'apipie-rails'
 gem 'devise_token_auth'
+gem 'graphql'
+gem 'graphiql-rails', group: :development
