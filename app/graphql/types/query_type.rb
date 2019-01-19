@@ -4,7 +4,8 @@ Types::QueryType = GraphQL::ObjectType.define do
   # They will be entry points for queries on your schema.
   field :allProducts, !types[Types::ProductType] do
     # resolve would be called in order to fetch data for that field
-    resolve -> (obj, args, ctx) { Product.all }
+  	argument :available, types.Boolean
+    resolve -> (obj, args, ctx) { args[:available] ? Product.available : Product.all }
   end
 
   field :singleProduct, Types::ProductType do

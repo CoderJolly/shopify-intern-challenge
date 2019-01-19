@@ -1,4 +1,6 @@
 class GraphqlController < ApplicationController
+  # before_action :authenticate_user!
+  # Uncomment and provide credentials in header for authentication.
   def execute
     variables = ensure_hash(params[:variables])
     query = params[:query]
