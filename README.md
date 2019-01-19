@@ -25,6 +25,9 @@ The project is now running on your [http://localhost:3000](http://localhost:3000
     > RAILS_ENV=production rake db:migrate
     > RAILS_ENV=production rake db:seed
     > RAILS_ENV=production rails s
+## Model Schema Definition
+The product and user models are defined as follows: 
+![Schema Defination.](./readme%20images/schema.png)
 
 ## API Documentation
 The documentation for the API is built on Postman Doc for ease of understanding and reproduction. The documentation has been created with the sample requests, headers and mock `JSON` response.  The requests can be easily made by copying the format and making necessary changes to the request. To access the documentation for the project navigate to [Postman API Documentation](https://documenter.getpostman.com/view/2369433/RzteSCBB).
@@ -36,7 +39,8 @@ To execute the request follow the elaborate postman documentation.
 
  1. Register a new user by Signing up.
  2. Sign in the user using Sign in request.
- 3. Use the credentials i.e., ****access-token***,* ***client*** and ***uid*** to authenticate further requests.
+ 3. Use the credentials recieved in header i.e., ****access-token***,* ***client*** and ***uid*** to authenticate further requests .
+![Credentials](./readme%20images/credentials.png)
  4. Play around with various CRUD endpoints for the Products using authentication credentials.
 
 ## GraphQL Implementation Documentation
