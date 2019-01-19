@@ -5,6 +5,7 @@ class GraphqlController < ApplicationController
     operation_name = params[:operationName]
     context = {
       # Query context goes here, for example:
+      session: session,
       current_user: current_user
     }
     result = ShopifyInternChallengeSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
