@@ -45,7 +45,7 @@ module Api
         begin
           if @product
             @product.destroy
-            render_success()
+            render_success(data: @product)
           else
             throw_unprocessable()
           end
