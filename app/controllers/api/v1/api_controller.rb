@@ -1,6 +1,8 @@
 module Api
   module V1
     class ApiController < ActionController::API
+      include DeviseTokenAuth::Concerns::SetUserByToken
+      protect_from_forgery with: :null_session
       
       def response_data(data: nil, message: nil, status: nil, error: nil, disabled: false)
         result = Hash.new
