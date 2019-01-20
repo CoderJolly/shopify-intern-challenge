@@ -3,10 +3,6 @@
 ## Introduction
 This repository is for the project submission for the Shopify Backend Intern Challenge. This project is built in Ruby on Rails and extends ***RESTful API*** for user authentication, product management etc. This project also extends functionality for GraphQL queries for product management. The API is secured with access only by *access-tokens* issued to users for making request. The API also allows CORS and uses API throttling to protect from DDOS attacks.
 
-![Heroku Deployment.](./readme%20images/heroku_logo.png)
-
-To view the deployed version of the project navigate to [Heroku](https://shopify-internship-challenge.herokuapp.com/).
-
 ## Running the Project
 To setup and run the project locally follow the following steps: 
     
@@ -25,6 +21,7 @@ The project is now running on your [http://localhost:3000](http://localhost:3000
     > RAILS_ENV=production rake db:migrate
     > RAILS_ENV=production rake db:seed
     > RAILS_ENV=production rails s
+
 ## Model Schema Definition
 The product and user models are defined as follows: 
 ![Schema Defination.](./readme%20images/schema.png)
@@ -45,7 +42,7 @@ To execute the request follow the elaborate postman documentation.
 
 ## GraphQL Implementation Documentation
 
-A set of queries and mutations have been implemented for basic CRUD operations for products and they are exposed at [http://localhost:3000/graphiql](http://localhost:3000/graphiql) for development or at [https://shopify-internship-challenge.herokuapp.com/graphiql](https://shopify-internship-challenge.herokuapp.com/graphiql) . Follow the screenshots for querying the `Product`'s from the GraphQL and mutating with them .  
+A set of queries and mutations have been implemented for basic CRUD operations for products and they are exposed at [http://localhost:3000/graphiql](http://localhost:3000/graphiql) for development. You can also send in a POST request with the query string at **http://localhost:3000/graphql** . Follow the screenshots for querying the `Product`'s from the GraphQL and mutating with them .  
 
 Additionally you can also send the request from the postman or equivalent API toolkit.
 
