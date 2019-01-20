@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get 'products' => 'products#index'
+      get 'products/:id' => 'products#individual'
+      post 'products/:id/purchase' => 'products#purchase'
       put 'products/:id/update' => 'products#update'
       post 'products/create' => 'products#create'
       delete 'products/:id/destroy' => 'products#destroy'
